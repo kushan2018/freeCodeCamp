@@ -589,6 +589,32 @@ int main()
 }
 ```
 
+## loops funny code
+#### try this
+
+#include <stdio.h>
+
+int main()
+{
+    unsigned i;
+    for (i = 99; i >= 0; i--) {
+        printf("%u bottles of beer...\n", i);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #### Example 10: Print Floyd's Triangle.
 
 ```
