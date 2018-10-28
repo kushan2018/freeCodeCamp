@@ -86,3 +86,36 @@ typedef union{
 * When you create a pointer to a structure using the `&` operator you can use the special `->` infix operator to deference it. This is very used for example when working with linked lists in C
 * The new defined type can be used just as other basic types for almost everything. Try for example to create an array of type `student` and see how it works.
 * Structs can be copied or assigned but you can not compare them!
+
+## simple programme for different data types
+### follow the *program*
+
+#include<stdio.h>
+void main()
+{
+/*………Declaration part…………*/
+char c;
+int x, y;
+float f1, f2;
+Double d1, d2;
+unsigned p;
+/*…………Assigning while declaring………*/
+int a = 4321;
+long int l = 5432167;
+/*……………Assignment Part ………………*/
+c = 'A';
+x = 867;
+f1 = 4.3214;
+d1 = 8.5467342;
+f2 = 20.000;
+d2 = 3.0;
+/*………Displaying Values……………………*/
+printf("c = %c \n", c);
+printf("x = %d and y = %d \n", x, y);
+printf("l = %ld \n", l);
+printf("d1 = %07lf \n", d1);
+printf("p = %u \n", p);
+}
+
+
+
