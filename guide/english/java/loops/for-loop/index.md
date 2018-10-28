@@ -71,3 +71,38 @@ System.out.println("The sum of the first 50 numbers is: " + 50);
 You cannot use a number (old C-style language construct) or anything that does not evaluate to a boolean value as a condition for an if statement or looping construct. You can't, for example, say if(x), unless x is a boolean variable.
 
 Also, it is important to keep in mind that the boolean expression must, at some point, evaluate to true. Otherwise, your program will be stuck in an infinite loop.
+
+
+## simple programme for java loops
+
+import java.util.*;
+
+class L2{
+public static void main(String[] args){
+  Scanner s = new Scanner(System.in);
+  int choice = 1;
+  while(choice == 1){
+	
+    int a;
+
+    System.out.println("Enter a number to check odd or even");
+    a = s.nextInt();
+
+    if(a%2==0){
+      System.out.println("Your number is even");
+    }
+
+    else{
+      System.out.println("Your number is odd");
+    }
+
+    System.out.println("Want to check more 1 for yes 0 for no");
+
+    choice = s.nextInt();
+
+  }
+
+  System.out.println("I hope you checked all your numbers.");
+
+}
+}
