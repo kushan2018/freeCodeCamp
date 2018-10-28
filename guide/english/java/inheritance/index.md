@@ -188,4 +188,92 @@ Remember, if the superclass does not have any constructors defined, you don't ha
 
 If no other constructors are defined, then Java invokes the default super class constructor (_even if not defined explicitly_).
 
-Congrats, now you know all about Inheritance! Read more about advanced ways to inherit things in Abstract Classes and [Interfaces](//forum.freecodecamp.com/t/java-docs-interfaces)!
+Congrats, now you know all about Inheritance! Read more about advanced ways to inherit things in Abstract Classes and [Interfaces](//forum.freecodecamp.com/t/java-docs-interfaces)!\
+
+
+## simple code inheritance in java
+
+//Java program to illustrate the 
+// concept of inheritance 
+
+// base class 
+class Bicycle 
+{ 
+	// the Bicycle class has two fields 
+	public int gear; 
+	public int speed; 
+		
+	// the Bicycle class has one constructor 
+	public Bicycle(int gear, int speed) 
+	{ 
+		this.gear = gear; 
+		this.speed = speed; 
+	} 
+		
+	// the Bicycle class has three methods 
+	public void applyBrake(int decrement) 
+	{ 
+		speed -= decrement; 
+	} 
+		
+	public void speedUp(int increment) 
+	{ 
+		speed += increment; 
+	} 
+	
+	// toString() method to print info of Bicycle 
+	public String toString() 
+	{ 
+		return("No of gears are "+gear 
+				+"\n"
+				+ "speed of bicycle is "+speed); 
+	} 
+} 
+
+// derived class 
+class MountainBike extends Bicycle 
+{ 
+	
+	// the MountainBike subclass adds one more field 
+	public int seatHeight; 
+
+	// the MountainBike subclass has one constructor 
+	public MountainBike(int gear,int speed, 
+						int startHeight) 
+	{ 
+		// invoking base-class(Bicycle) constructor 
+		super(gear, speed); 
+		seatHeight = startHeight; 
+	} 
+		
+	// the MountainBike subclass adds one more method 
+	public void setHeight(int newValue) 
+	{ 
+		seatHeight = newValue; 
+	} 
+	
+	// overriding toString() method 
+	// of Bicycle to print more info 
+	@Override
+	public String toString() 
+	{ 
+		return (super.toString()+ 
+				"\nseat height is "+seatHeight); 
+	} 
+	
+} 
+
+// driver class 
+public class Test 
+{ 
+	public static void main(String args[]) 
+	{ 
+		
+		MountainBike mb = new MountainBike(3, 100, 25); 
+		System.out.println(mb.toString()); 
+			
+	} 
+} 
+
+
+
