@@ -2,9 +2,9 @@
 name: 'Bug Report: Issues with Coding challenges'
 about: Reporting issue with a specific challenge, like broken tests, unclear instructions.
 
----
+-----
 
-<!-- 
+<!--- 
 NOTE: If you're reporting a security issue, don't create a GitHub issue. Instead, email security@freecodecamp.org. We will look into it immediately. 
 -->
 **Describe your problem and how to reproduce it:**
